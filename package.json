@@ -1,0 +1,98 @@
+{
+  "name": "vue-directives-kit",
+  "version": "1.0.3",
+  "type": "module",
+  "description": "A comprehensive collection of Vue 3 custom directives for enhanced user interactions",
+  "main": "dist/index.umd.js",
+  "module": "dist/index.es.js",
+  "types": "dist/types/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.es.js",
+      "require": "./dist/index.umd.js",
+      "types": "./dist/types/index.d.ts"
+    },
+    "./types": {
+      "types": "./dist/types/vue.d.ts"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "keywords": [
+    "vue",
+    "directives",
+    "vue3",
+    "custom-directives",
+    "typescript",
+    "ui",
+    "interaction",
+    "copy",
+    "debounce",
+    "lazy-loading",
+    "longpress",
+    "permissions",
+    "resize",
+    "scroll",
+    "tooltip",
+    "click-outside",
+    "draggable",
+    "focus",
+    "ripple"
+  ],
+  "author": {
+    "name": "Mohamed Eslam",
+    "email": "mohamed@example.com",
+    "url": "https://github.com/mohamedeslam04"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mohamedeslam04/vue-custom-directives.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mohamedeslam04/vue-custom-directives/issues"
+  },
+  "homepage": "https://github.com/mohamedeslam04/vue-custom-directives#readme",
+  "engines": {
+    "node": ">=20.0.0",
+    "npm": ">=9.0.0"
+  },
+  "peerDependencies": {
+    "vue": "^3.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@vitejs/plugin-vue": "^5.2.4",
+    "terser": "^5.42.0",
+    "typescript": "^5.3.3",
+    "vite": "^6.3.5",
+    "vue": "^3.5.16",
+    "vue-tsc": "^2.0.6"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "npm run type-check && vite build && npm run generate-types",
+    "build-lib": "vite build",
+    "generate-types": "vue-tsc --declaration --emitDeclarationOnly --outDir dist",
+    "type-check": "vue-tsc --noEmit",
+    "prepublishOnly": "npm run build",
+    "preview": "vite preview"
+  },
+  "volta": {
+    "node": "22.16.0",
+    "npm": "11.4.1"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.1.9",
+    "tailwindcss": "^4.1.9"
+  }
+}
