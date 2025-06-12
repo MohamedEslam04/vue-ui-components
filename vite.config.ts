@@ -17,7 +17,7 @@ export default defineConfig({
   build: {
     lib: {
       entry: resolve(__dirname, 'src/index.ts'),
-      name: 'VueCustomDirectives',
+      name: 'VueDirectivesKit',
       fileName: (format) => `index.${format}.js`,
       formats: ['es', 'umd']
     },
@@ -38,6 +38,13 @@ export default defineConfig({
         drop_debugger: true
       }
     },
-    target: 'es2020'
+    target: 'es2020',
+    cssCodeSplit: false
+  },
+
+  css: {
+    postcss: {
+      plugins: []
+    }
   }
 })
