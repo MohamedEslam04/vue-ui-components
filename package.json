@@ -1,96 +1,87 @@
 {
-  "name": "vue-directives-kit",
-  "version": "1.0.4",
-  "type": "module",
-  "description": "A comprehensive collection of Vue 3 custom directives for enhanced user interactions",
-  "main": "dist/index.umd.js",
-  "module": "dist/index.es.js",
-  "types": "dist/types/index.d.ts",
-  "exports": {
-    ".": {
-      "import": "./dist/index.es.js",
-      "require": "./dist/index.umd.js",
-      "types": "./dist/types/index.d.ts"
-    },
-    "./types": {
-      "types": "./dist/types/vue.d.ts"
-    },
-    "./package.json": "./package.json"
-  },
-  "files": [
-    "dist",
-    "README.md",
-    "LICENSE",
-    "CHANGELOG.md"
-  ],
-  "keywords": [
-    "vue",
-    "directives",
-    "vue3",
-    "custom-directives",
-    "typescript",
-    "ui",
-    "interaction",
-    "copy",
-    "debounce",
-    "lazy-loading",
-    "longpress",
-    "permissions",
-    "resize",
-    "scroll",
-    "tooltip",
-    "click-outside",
-    "draggable",
-    "focus",
-    "ripple"
-  ],
-  "author": {
-    "name": "Mohamed Eslam",
-    "email": "mohamed@example.com",
-    "url": "https://github.com/mohamedeslam04"
-  },
+  "name": "headlessui",
+  "version": "0.0.0",
+  "description": "Headless UI components for various libraries like React and Vue",
+  "main": "index.js",
+  "repository": "https://github.com/tailwindlabs/headlessui",
   "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mohamedeslam04/vue-custom-directives.git"
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "playgrounds/*"
+  ],
+  "scripts": {
+    "react": "npm run --workspace=@headlessui/react",
+    "react-playground": "npm run --workspace=playground-react dev",
+    "playground-react": "npm run --workspace=playground-react dev",
+    "vue": "npm run --workspace=@headlessui/vue",
+    "playground-vue": "npm run --workspace=playground-vue dev",
+    "vue-playground": "npm run --workspace=playground-vue dev",
+    "clean": "npm run clean --workspaces --if-present",
+    "build": "npm-run-all -p 'react build' 'vue build'",
+    "test": "./scripts/test.sh",
+    "lint": "./scripts/lint.sh",
+    "lint-check": "CI=true ./scripts/lint.sh",
+    "lint-types": "CI=true npm run lint-types --workspaces --if-present",
+    "release-channel": "node ./scripts/release-channel.js",
+    "release-notes": "node ./scripts/release-notes.js",
+    "package-path": "node ./scripts/package-path.js"
   },
-  "bugs": {
-    "url": "https://github.com/mohamedeslam04/vue-custom-directives/issues"
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   },
-  "homepage": "https://github.com/mohamedeslam04/vue-custom-directives#readme",
-  "engines": {
-    "node": ">=20.0.0",
-    "npm": ">=9.0.0"
+  "lint-staged": {
+    "*": "npm run lint"
   },
-  "peerDependencies": {
-    "vue": "^3.3.0"
+  "prettier": {
+    "printWidth": 100,
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "es5",
+    "plugins": [
+      "prettier-plugin-organize-imports",
+      "prettier-plugin-tailwindcss"
+    ],
+    "overrides": [
+      {
+        "files": [
+          "./playgrounds/react/**/*"
+        ],
+        "options": {
+          "tailwindStylesheet": "./playgrounds/react/pages/styles.css"
+        }
+      },
+      {
+        "files": [
+          "./playgrounds/vue/**/*"
+        ],
+        "options": {
+          "tailwindStylesheet": "./playgrounds/vue/src/styles.css"
+        }
+      }
+    ]
   },
   "devDependencies": {
-    "@types/node": "^22.0.0",
-    "@vitejs/plugin-vue": "^5.2.4",
-    "@tailwindcss/vite": "^4.1.9",
-    "tailwindcss": "^4.1.9",
-    "terser": "^5.42.0",
-    "typescript": "^5.3.3",
-    "vite": "^6.3.5",
-    "vue": "^3.5.16",
-    "vue-tsc": "^2.0.6"
-  },
-  "publishConfig": {
-    "access": "public",
-    "registry": "https://registry.npmjs.org/"
-  },
-  "scripts": {
-    "dev": "vite",
-    "build": "npm run type-check && vite build && npm run generate-types",
-    "build-lib": "vite build",
-    "generate-types": "vue-tsc --declaration --emitDeclarationOnly --outDir dist",
-    "type-check": "vue-tsc --noEmit",
-    "prepublishOnly": "npm run build",
-    "preview": "vite preview"
-  },
-  "volta": {
-    "node": "22.16.0",
-    "npm": "11.4.1"
+    "@arethetypeswrong/cli": "^0.13.3",
+    "@swc-node/register": "^1.6.8",
+    "@swc/core": "^1.2.131",
+    "@swc/jest": "^0.2.17",
+    "@testing-library/jest-dom": "^5.16.4",
+    "@types/node": "^14.14.22",
+    "esbuild": "^0.17.8",
+    "fast-glob": "^3.2.11",
+    "husky": "^4.3.8",
+    "jest": "26",
+    "lint-staged": "^12.2.1",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^3.1.0",
+    "prettier-plugin-organize-imports": "^3.2.4",
+    "prettier-plugin-tailwindcss": "^0.6.11",
+    "resize-observer-polyfill": "^1.5.1",
+    "rimraf": "^3.0.2",
+    "tslib": "^2.3.1",
+    "typescript": "^5.4.3"
   }
 }
