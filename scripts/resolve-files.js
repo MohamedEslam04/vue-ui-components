@@ -1,13 +1,11 @@
 #!/usr/bin/env node
-const path = require('path')
-const fastGlob = require('fast-glob')
+let fastGlob = require('fast-glob')
 
 let parts = process.argv.slice(2)
 let [args, flags] = parts.reduce(
   ([args, flags], part) => {
     if (part.startsWith('--')) {
-      const [key, value] = part.slice(2).split('=')
-      flags[key] = value
+      flags[part.slice(2, part.indexOf('='))] = part.slice(part.indexOf('=') + 1)
     } else {
       args.push(part)
     }
@@ -19,12 +17,9 @@ let [args, flags] = parts.reduce(
 flags.ignore = flags.ignore ?? ''
 flags.ignore = flags.ignore.split(',').filter(Boolean)
 
-// Ensure paths are properly resolved
-const resolvedArgs = args.map((arg) => path.resolve(process.cwd(), arg))
-
 console.log(
   fastGlob
-    .sync(resolvedArgs.join(''))
+    .sync(args.join(''))
     .filter((file) => {
       for (let ignore of flags.ignore) {
         if (file.includes(ignore)) {
@@ -33,6 +28,5 @@ console.log(
       }
       return true
     })
-    .map((file) => path.normalize(file))
     .join('\n')
 )

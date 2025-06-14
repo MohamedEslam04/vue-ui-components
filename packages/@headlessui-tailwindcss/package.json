@@ -33,8 +33,8 @@
   },
   "scripts": {
     "prepublishOnly": "npm run build",
-    "build": "../../scripts/build.sh --external:tailwindcss && node ./scripts/fix-types.cjs",
-    "watch": "../../scripts/watch.sh --external:tailwindcss",
+    "build": "node ../../scripts/build-tailwindcss.js && node ./scripts/fix-types.cjs",
+    "watch": "node ../../scripts/watch.js --external:tailwindcss",
     "test": "../../scripts/test.sh",
     "lint": "../../scripts/lint.sh",
     "lint-types": "npm run attw -P --workspaces --if-present",
