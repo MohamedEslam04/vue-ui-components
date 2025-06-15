@@ -1,0 +1,7 @@
+
+/node_modules
+/packages/@headlessui-react/node_modules
+/packages/@headlessui-tailwindcss/dist
+/packages/@headlessui-vue/dist
+/playgrounds/react/node_modules
+/playgrounds/vue/node_modules
