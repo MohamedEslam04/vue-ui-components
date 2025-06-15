@@ -70,7 +70,7 @@
 
 <script>
 import { ref } from 'vue'
-import { RadioGroup, RadioGroupOption } from '@headlessui/vue'
+import { RadioGroup, RadioGroupOption } from '@eslamdevui/vue'
 
 function classNames(...classes) {
   return classes.filter(Boolean)

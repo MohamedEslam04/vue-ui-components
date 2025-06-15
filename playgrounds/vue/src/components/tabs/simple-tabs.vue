@@ -28,7 +28,7 @@
 </template>
 
 <script setup>
-import { TabGroup, TabList, Tab, TabPanels, TabPanel } from '@headlessui/vue'
+import { TabGroup, TabList, Tab, TabPanels, TabPanel } from '@eslamdevui/vue'
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')

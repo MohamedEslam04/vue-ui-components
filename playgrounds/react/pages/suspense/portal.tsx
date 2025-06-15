@@ -1,6 +1,6 @@
 'use client'
 
-import { Portal } from '@headlessui/react'
+import { Portal } from '@eslamdevui/react'
 import { lazy, Suspense } from 'react'
 
 function MyComponent({ children }: { children(message: string): React.JSX.Element }) {

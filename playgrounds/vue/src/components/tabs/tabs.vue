@@ -57,7 +57,7 @@ import {
   Tab,
   TabPanels,
   TabPanel,
-} from '@headlessui/vue'
+} from '@eslamdevui/vue'
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')

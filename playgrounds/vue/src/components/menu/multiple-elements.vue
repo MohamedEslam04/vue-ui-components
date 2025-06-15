@@ -97,7 +97,7 @@
 
 <script>
 import { defineComponent, h } from 'vue'
-import { Menu, MenuButton, MenuItems, MenuItem } from '@headlessui/vue'
+import { Menu, MenuButton, MenuItems, MenuItem } from '@eslamdevui/vue'
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')

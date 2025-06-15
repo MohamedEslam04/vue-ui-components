@@ -253,7 +253,7 @@ import {
   ComboboxOptions,
   ComboboxOption,
   ComboboxLabel,
-} from '@headlessui/vue'
+} from '@eslamdevui/vue'
 let html = String.raw
 
 let Section = {

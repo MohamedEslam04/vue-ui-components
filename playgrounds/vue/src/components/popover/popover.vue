@@ -17,7 +17,8 @@
 
         <PopoverButton
           class="focus:outline-hidden relative z-30 border-2 border-transparent bg-gray-300 px-3 py-2 focus:border-blue-900"
-          >Normal</PopoverButton
+        >
+          Normal</PopoverButton
         >
         <PopoverPanel class="absolute z-30 flex w-64 flex-col border-2 border-blue-900 bg-gray-100">
           <button
@@ -34,8 +35,8 @@
       <Popover as="div" class="relative">
         <PopoverButton
           class="focus:outline-hidden border-2 border-transparent bg-gray-300 px-3 py-2 focus:border-blue-900"
-          >Focus</PopoverButton
-        >
+          >Focus
+        </PopoverButton>
         <PopoverPanel
           focus
           class="absolute flex w-64 flex-col border-2 border-blue-900 bg-gray-100"
@@ -54,8 +55,8 @@
         <PopoverButton
           ref="trigger1"
           class="focus:outline-hidden border-2 border-transparent bg-gray-300 px-3 py-2 focus:border-blue-900"
-          >Portal</PopoverButton
-        >
+          >Portal
+        </PopoverButton>
         <Portal>
           <PopoverPanel
             ref="container1"
@@ -109,7 +110,7 @@ import {
   PopoverGroup,
   PopoverButton,
   Portal,
-} from '@headlessui/vue'
+} from '@eslamdevui/vue'
 import { usePopper } from '../../playground-utils/hooks/use-popper'
 
 function html(templates) {

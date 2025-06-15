@@ -1,4 +1,4 @@
-import { Disclosure, Transition } from '@headlessui/react'
+import { Disclosure, Transition } from '@eslamdevui/react'
 
 export default function Home() {
   return (

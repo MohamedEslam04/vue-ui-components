@@ -3,7 +3,7 @@ set -e
 
 SRC='./src'
 DST='./dist'
-name="headlessui"
+name="eslamdevui"
 input="./${SRC}/index.ts"
 
 sharedOptions=()

@@ -117,7 +117,7 @@ import {
   ListboxButton,
   ListboxOptions,
   ListboxOption,
-} from '@headlessui/vue'
+} from '@eslamdevui/vue'
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')

@@ -1,4 +1,4 @@
-import { Dialog, Transition } from '@headlessui/react'
+import { Dialog, Transition } from '@eslamdevui/react'
 import { useState } from 'react'
 
 function MyDialog({ open, close }) {

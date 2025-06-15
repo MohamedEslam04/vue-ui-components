@@ -1,4 +1,4 @@
-import { Dialog, Transition } from '@headlessui/react'
+import { Dialog, Transition } from '@eslamdevui/react'
 import { ExclamationIcon } from '@heroicons/react/outline'
 import { useRef, useState } from 'react'
 

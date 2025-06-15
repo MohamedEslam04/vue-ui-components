@@ -171,7 +171,7 @@ import {
   Portal,
   TransitionRoot,
   TransitionChild,
-} from '@headlessui/vue'
+} from '@eslamdevui/vue'
 import Flatpickr from 'vue-flatpickr-component'
 import { usePopper } from '../../playground-utils/hooks/use-popper'
 import Button from '../Button.vue'

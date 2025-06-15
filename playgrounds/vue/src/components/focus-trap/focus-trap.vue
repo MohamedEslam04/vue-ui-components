@@ -12,7 +12,7 @@
 
 <script>
 import { defineComponent, h, ref, onMounted, watchEffect, watch } from 'vue'
-import { FocusTrap } from '@headlessui/vue'
+import { FocusTrap } from '@eslamdevui/vue'
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')

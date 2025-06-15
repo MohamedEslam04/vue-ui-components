@@ -7,7 +7,7 @@ import {
   ComboboxOption,
   ComboboxOptions,
   ComboboxButton,
-} from '@headlessui/vue'
+} from '@eslamdevui/vue'
 
 type Option = {
   name: string

@@ -20,7 +20,7 @@
 </template>
 
 <script>
-import { Disclosure, DisclosureButton, DisclosurePanel, TransitionRoot } from '@headlessui/vue'
+import { Disclosure, DisclosureButton, DisclosurePanel, TransitionRoot } from '@eslamdevui/vue'
 
 export default {
   components: {

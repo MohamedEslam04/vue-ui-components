@@ -60,7 +60,7 @@
 
 <script>
 import { defineComponent, h, ref, onMounted, watchEffect, watch } from 'vue'
-import { Menu, MenuButton, MenuItems, MenuItem } from '@headlessui/vue'
+import { Menu, MenuButton, MenuItems, MenuItem } from '@eslamdevui/vue'
 import { usePopper } from '../../playground-utils/hooks/use-popper'
 
 function classNames(...classes) {

@@ -25,7 +25,7 @@
 
 <script setup>
 import { ref } from 'vue'
-import { Dialog, DialogOverlay, TabGroup, TabList, Tab, TabPanels, TabPanel } from '@headlessui/vue'
+import { Dialog, DialogOverlay, TabGroup, TabList, Tab, TabPanels, TabPanel } from '@eslamdevui/vue'
 
 let open = ref(false)
 </script>

@@ -1,4 +1,4 @@
-import { Combobox, Field, Input, Label, Listbox, RadioGroup, Switch } from '@headlessui/react'
+import { Combobox, Field, Input, Label, Listbox, RadioGroup, Switch } from '@eslamdevui/react'
 import { useState } from 'react'
 import { Button } from '../../components/button'
 import { classNames } from '../../utils/class-names'

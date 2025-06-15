@@ -1,4 +1,4 @@
-import { Switch } from '@headlessui/react'
+import { Switch } from '@eslamdevui/react'
 import { useState } from 'react'
 
 import { classNames } from '../../utils/class-names'

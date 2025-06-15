@@ -1,4 +1,4 @@
-import { Dialog, Tab } from '@headlessui/react'
+import { Dialog, Tab } from '@eslamdevui/react'
 import { useState } from 'react'
 import { Button } from '../../components/button'
 

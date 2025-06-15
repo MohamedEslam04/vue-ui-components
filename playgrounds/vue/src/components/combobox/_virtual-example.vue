@@ -131,7 +131,7 @@ import {
   ComboboxLabel,
   ComboboxOption,
   ComboboxOptions,
-} from '@headlessui/vue'
+} from '@eslamdevui/vue'
 
 let props = defineProps(['data', 'initial', 'virtual'])
 

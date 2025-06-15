@@ -80,7 +80,7 @@ import {
   ListboxButton,
   ListboxOptions,
   ListboxOption,
-} from '@headlessui/vue'
+} from '@eslamdevui/vue'
 
 export default {
   components: { Listbox, ListboxLabel, ListboxButton, ListboxOptions, ListboxOption },

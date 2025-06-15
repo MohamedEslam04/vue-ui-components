@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should be possible to use a LabelProvider and a single Label, and have them linked 1`] = `
+<div
+  aria-labelledby="eslamdevui-label-1"
+>
+  <div
+    data-eslamdevui-state=""
+    id="eslamdevui-label-1"
+  >
+    I am a label
+  </div>
+  <span>
+    Contents
+  </span>
+</div>
+`;
+
+exports[`should be possible to use a LabelProvider and multiple Label components, and have them linked 1`] = `
+<div
+  aria-labelledby="eslamdevui-label-1 eslamdevui-label-2"
+>
+  <div
+    data-eslamdevui-state=""
+    id="eslamdevui-label-1"
+  >
+    I am a label
+  </div>
+  <span>
+    Contents
+  </span>
+  <div
+    data-eslamdevui-state=""
+    id="eslamdevui-label-2"
+  >
+    I am also a label
+  </div>
+</div>
+`;
+
+exports[`should be possible to use a LabelProvider without using a Label 1`] = `
+<div>
+  No label
+</div>
+`;

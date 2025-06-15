@@ -53,7 +53,7 @@
 
 <script>
 import { defineComponent, h, ref, onMounted, watchEffect, watch, computed } from 'vue'
-import { Menu, MenuButton, MenuItems, MenuItem } from '@headlessui/vue'
+import { Menu, MenuButton, MenuItems, MenuItem } from '@eslamdevui/vue'
 import { useFloating, offset } from '@floating-ui/vue'
 
 function classNames(...classes) {

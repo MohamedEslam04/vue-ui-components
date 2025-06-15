@@ -1,4 +1,4 @@
-import { Transition } from '@headlessui/react'
+import { Transition } from '@eslamdevui/react'
 import { resolveValue, toast, Toaster, ToastIcon } from 'react-hot-toast'
 
 const TailwindToaster = () => {

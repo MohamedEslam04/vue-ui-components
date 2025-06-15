@@ -1,9 +1,9 @@
 {
-  "name": "headlessui",
+  "name": "eslamdevui",
   "version": "0.0.0",
   "description": "Headless UI components for various libraries like React and Vue",
   "main": "index.js",
-  "repository": "https://github.com/tailwindlabs/headlessui",
+  "repository": "https://github.com/tailwindlabs/eslamdevui",
   "license": "MIT",
   "private": true,
   "workspaces": [
@@ -11,10 +11,10 @@
     "playgrounds/*"
   ],
   "scripts": {
-    "react": "npm run --workspace=@headlessui/react",
+    "react": "npm run --workspace=@eslamdevui/react",
     "react-playground": "npm run --workspace=playground-react dev",
     "playground-react": "npm run --workspace=playground-react dev",
-    "vue": "npm run --workspace=@headlessui/vue",
+    "vue": "npm run --workspace=@eslamdevui/vue",
     "playground-vue": "npm run --workspace=playground-vue dev",
     "vue-playground": "npm run --workspace=playground-vue dev",
     "clean": "npm run clean --workspaces --if-present",

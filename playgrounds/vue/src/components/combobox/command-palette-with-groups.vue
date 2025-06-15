@@ -7,7 +7,7 @@ import {
   ComboboxLabel,
   ComboboxOption,
   ComboboxOptions,
-} from '@headlessui/vue'
+} from '@eslamdevui/vue'
 
 let everybody = [
   { id: 1, img: 'https://github.com/adamwathan.png', name: 'Adam Wathan' },

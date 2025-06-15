@@ -3,7 +3,7 @@ set -e
 
 # Known variables
 outdir="./dist"
-name="headlessui"
+name="eslamdevui"
 input="./src/index.ts"
 
 # Setup shared options for esbuild

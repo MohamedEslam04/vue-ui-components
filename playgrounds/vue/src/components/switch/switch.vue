@@ -20,7 +20,7 @@
 
 <script>
 import { ref } from 'vue'
-import { SwitchGroup, Switch, SwitchLabel } from '@headlessui/vue'
+import { SwitchGroup, Switch, SwitchLabel } from '@eslamdevui/vue'
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')

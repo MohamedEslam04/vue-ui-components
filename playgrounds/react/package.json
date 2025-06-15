@@ -3,10 +3,10 @@
   "private": true,
   "version": "0.0.0",
   "scripts": {
-    "prebuild": "npm run build --workspace=@headlessui/react && npm run build --workspace=@headlessui/tailwindcss",
-    "predev": "npm run build --workspace=@headlessui/react && npm run build --workspace=@headlessui/tailwindcss",
-    "dev:tailwindcss": "npm run watch --workspace=@headlessui/tailwindcss",
-    "dev:headlessui": "npm run watch --workspace=@headlessui/react",
+    "prebuild": "npm run build --workspace=@eslamdevui/react && npm run build --workspace=@eslamdevui/tailwindcss",
+    "predev": "npm run build --workspace=@eslamdevui/react && npm run build --workspace=@eslamdevui/tailwindcss",
+    "dev:tailwindcss": "npm run watch --workspace=@eslamdevui/tailwindcss",
+    "dev:eslamdevui": "npm run watch --workspace=@eslamdevui/react",
     "dev:next": "next dev",
     "dev": "npm-run-all -p dev:*",
     "build": "next build",
@@ -15,8 +15,8 @@
     "clean": "rimraf ./.next"
   },
   "dependencies": {
-    "@headlessui/react": "*",
-    "@headlessui/tailwindcss": "*",
+    "@eslamdevui/react": "*",
+    "@eslamdevui/tailwindcss": "*",
     "@heroicons/react": "^1.0.6",
     "@popperjs/core": "^2.6.0",
     "@tailwindcss/forms": "^0.5.2",

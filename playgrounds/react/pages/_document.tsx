@@ -13,13 +13,13 @@ export default function Document() {
           rel="icon"
           type="image/png"
           sizes="32x32"
-          href="https://headlessui.dev/favicon-32x32.png"
+          href="https://eslamdevui.dev/favicon-32x32.png"
         />
         <link
           rel="icon"
           type="image/png"
           sizes="16x16"
-          href="https://headlessui.dev/favicon-16x16.png"
+          href="https://eslamdevui.dev/favicon-16x16.png"
         />
       </Head>
       <body>

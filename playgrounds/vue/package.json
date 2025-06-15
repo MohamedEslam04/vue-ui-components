@@ -6,10 +6,10 @@
     "example": "examples"
   },
   "scripts": {
-    "prebuild": "npm run build --workspace=@headlessui/vue && npm run build --workspace=@headlessui/tailwindcss",
-    "predev": "npm run build --workspace=@headlessui/vue && npm run build --workspace=@headlessui/tailwindcss",
-    "dev:tailwindcss": "npm run watch --workspace=@headlessui/tailwindcss",
-    "dev:headlessui": "npm run watch --workspace=@headlessui/vue",
+    "prebuild": "npm run build --workspace=@eslamdevui/vue && npm run build --workspace=@eslamdevui/tailwindcss",
+    "predev": "npm run build --workspace=@eslamdevui/vue && npm run build --workspace=@eslamdevui/tailwindcss",
+    "dev:tailwindcss": "npm run watch --workspace=@eslamdevui/tailwindcss",
+    "dev:eslamdevui": "npm run watch --workspace=@eslamdevui/vue",
     "dev:next": "vite serve",
     "dev": "npm-run-all -p dev:*",
     "build": "NODE_ENV=production vite build",
@@ -17,7 +17,7 @@
     "clean": "rimraf ./dist"
   },
   "dependencies": {
-    "@headlessui/vue": "*",
+    "@eslamdevui/vue": "*",
     "@heroicons/vue": "^1.0.6",
     "@tailwindcss/forms": "^0.5.2",
     "@tailwindcss/postcss": "^4.1.3",

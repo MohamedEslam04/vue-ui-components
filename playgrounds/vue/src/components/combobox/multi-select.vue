@@ -124,7 +124,7 @@ import {
   ComboboxButton,
   ComboboxOptions,
   ComboboxOption,
-} from '@headlessui/vue'
+} from '@eslamdevui/vue'
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')

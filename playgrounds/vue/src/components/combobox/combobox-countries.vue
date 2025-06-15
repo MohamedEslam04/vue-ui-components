@@ -8,7 +8,7 @@ import {
   ComboboxLabel,
   ComboboxOption,
   ComboboxOptions,
-} from '@headlessui/vue'
+} from '@eslamdevui/vue'
 
 export default defineComponent({
   components: {

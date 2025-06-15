@@ -1,4 +1,4 @@
-import { Combobox } from '@headlessui/react'
+import { Combobox } from '@eslamdevui/react'
 import { Fragment, useEffect, useState } from 'react'
 
 import { classNames } from '../../utils/class-names'

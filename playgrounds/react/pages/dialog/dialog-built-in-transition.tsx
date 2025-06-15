@@ -1,4 +1,4 @@
-import { Dialog, DialogBackdrop, DialogPanel } from '@headlessui/react'
+import { Dialog, DialogBackdrop, DialogPanel } from '@eslamdevui/react'
 import { useState } from 'react'
 import { Button } from '../../components/button'
 import { classNames } from '../../utils/class-names'

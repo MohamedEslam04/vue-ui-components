@@ -1,4 +1,4 @@
-import { Menu } from '@headlessui/react'
+import { Menu } from '@eslamdevui/react'
 import { Button } from '../../components/button'
 import { classNames } from '../../utils/class-names'
 
