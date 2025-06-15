@@ -9,7 +9,7 @@ export function useDocumentOverflowLockedEffect(
 ) {
   let store = useStore(overflows)
   let locked = computed(() => {
-    let entry = doc.value ? store.value.get(doc.value) : undefined
+    let entry = doc.value && store.value ? store.value.get(doc.value) : undefined
     return entry ? entry.count > 0 : false
   })
 
