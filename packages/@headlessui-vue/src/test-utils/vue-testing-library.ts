@@ -24,11 +24,11 @@ export function createRenderTemplate(defaultComponents: Record<string, AnyCompon
       input = { template: input }
     }
 
-    let component: ComponentOptionsWithoutProps = Object.assign({}, input, {
+    let component = Object.assign({}, input, {
       components: { ...defaultComponents, ...input.components },
     })
 
-    return render(defineComponent(component))
+    return render(defineComponent(component as any))
   }
 }
 
